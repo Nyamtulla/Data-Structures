@@ -3,7 +3,7 @@
 # include <fstream>
 # include <string>
 
-# include "MyQuicksort.hpp"
+# include "MyQuicksort_Template.hpp"
 
 using namespace std;
 
@@ -24,6 +24,7 @@ void parseInstance(const std::string& line, std::vector<std::string> & res)
 
 int main(int argc, char* argv[])
 {
+  //std::cout << "QS"  << std::endl;
   std::ifstream fin;
   std::vector<std::string> data;
   fin.open(argv[1]);	    // open file
@@ -44,6 +45,7 @@ int main(int argc, char* argv[])
   for(auto x : data) data2.push_back(std::stoi(x));
   PrintArray(data2);
   // sort INTEGER array in ascending order
+  //std::cout << "QS" << std::endl;
   Quicksort(data2);
   IsSorted(data2);
   PrintArray(data2);
@@ -51,6 +53,10 @@ int main(int argc, char* argv[])
   Quicksort(data2, true);
   IsSorted(data2, true);
   PrintArray(data2);
+  // std::vector<int> data = {34,24,23,5,42,23,43,564,675,342,3};
+  // InsertionSort(data,0,data.sie()-1, true);
+  // PrintArray(data);
 
   return 0;
+  
 }
