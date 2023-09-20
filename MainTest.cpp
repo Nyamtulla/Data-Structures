@@ -53,9 +53,6 @@ int main(int argc, char* argv[])
   Quicksort(data2, true);
   IsSorted(data2, true);
   PrintArray(data2);
-  // std::vector<int> data = {34,24,23,5,42,23,43,564,675,342,3};
-  // InsertionSort(data,0,data.sie()-1, true);
-  // PrintArray(data);
 
   return 0;
   
